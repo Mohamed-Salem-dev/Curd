@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <h1 class="text-center my-3">Curd Products</h1>
+
+        <section class="form-floating my-4">
+          <label
+            class="fw-bolder translate-middle-y position-absolute z-3 h-auto w-auto p-0 bg-white top-0"
+            for="productName"
+            >Name</label
+          >
+          <input
+            oninput="addTest(this)"
+            class="form-control position-relative"
+            id="productName"
+            type="text"
+          />
+        </section>
+
+        <section class="form-floating my-4">
+          <label
+            class="fw-bolder translate-middle-y position-absolute h-auto w-auto p-0 z-3 bg-white top-0"
+            for="productPrice"
+            >Price</label
+          >
+          <input
+            oninput="addTest(this)"
+            class="form-control position-relative"
+            id="productPrice"
+            type="number"
+          />
+        </section>
+
+        <section class="form-floating my-4">
+          <label
+            class="fw-bolder translate-middle-y position-absolute z-3 h-auto w-auto p-0 bg-white top-0"
+            for="productDesc"
+            >description</label
+          >
+          <input
+            oninput="addTest(this)"
+            class="form-control position-relative"
+            id="productDesc"
+            type="text"
+          />
+        </section>
+
+        <section class="form-floating my-4">
+          <label
+            class="fw-bolder translate-middle-y position-absolute z-3 h-auto w-auto p-0 bg-white top-0"
+            for="productImage"
+            >Image</label
+          >
+          <input
+            class="form-control position-relative"
+            id="productImage"
+            type="file"
+          />
+        </section>
+        <button id="addProducts" class="btn-info btn text-white my-4">
+          Add Products
+        </button>
+        <button
+          onclick="updateIndexProducts()"
+          id="updateProducts"
+          class="btn-warning btn text-white my-5 d-none"
+        >
+          update Products
+        </button>
+      </div>
+
+      <div class="container">
+        <input
+          oninput="searchIndexProducts()"
+          id="searchProducts"
+          class="form-control"
+          placeholder="search products"
+          type="search"
+        />
+
+        <div id="datable" class="row my-3">
+          <!-- <div class="col-3">
+                        <div class="m-auto text-center">
+                            <h2 class="fw-light">Name</h2>
+                            <img class="w-25" src="images/1 (1).jpg" alt>
+
+                            <h4> 23</h4>
+                            <p class="lh-lg"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing
+                                elit. Consequatur enim numquam nihil voluptates
+                            </p>
+                            <button id="deletElment"
+                                class="btn btn-danger mx-2 text-white fw-bolder ">Delete</button>
+                            <button id="upDateElment"
+                                class="btn btn-warning mx-2 text-white fw-bolder">Update</button>
+                        </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
